@@ -26,7 +26,7 @@ def network2list(fname, is_zero_based = True):
     """
     f = open(fname)
     l = f.readline()
-    n = int(l.strip().split()[0])        #*@\label{bfs:getn}
+    n = int(l.strip().split()[0])
     network = [[] for i in range(n)]
     for l in f:
         nodesnedge = l.strip().split()
