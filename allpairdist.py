@@ -33,5 +33,5 @@ if __name__ == "__main__":
     fname = '../data/network-links'
     a = network2distancematrix(fname, True)
     allpairs(a)
-    print a[1][6]
-    print a[0][7]
+    print(a[1][6])
+    print(a[0][7])
