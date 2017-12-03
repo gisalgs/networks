@@ -60,7 +60,7 @@ def network2distancematrix(fname, is_zero_based = True):
     f = open(fname)
     l = f.readline()
     n = int(l.strip().split()[0])   # number of nodes
-    a=[[INF]*n for x in xrange(n)]  # init 2D list of INF
+    a=[[INF]*n for x in range(n)]  # init 2D list of INF
     for l in f:
         nodesnedge = l.strip().split()
         if len(nodesnedge)==3:
