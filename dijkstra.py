@@ -25,15 +25,15 @@ def dijkstra(source, distmatrix):
       prev: list of previous node for each node on the path
     """
     n = len(distmatrix)
-    dist = [INF if i!=source else 0 for i in range(n)]     #*@\label{dijk:dist}
-    prev = [None for i in range(n)]                        #*@\label{dijk:prev}
-    Q = range(n)                                           #*@\label{dijk:Q}
-    while len(Q)>0:                                        #*@\label{dijk:while}
-        u = get_remove_min(Q, dist)                        #*@\label{dijk:minq}
-        U = get_neighbor(u, distmatrix, n)                 #*@\label{dijk:neighbor}
+    dist = [INF if i!=source else 0 for i in range(n)]
+    prev = [None for i in range(n)]
+    Q = list(range(n))
+    while len(Q)>0:
+        u = get_remove_min(Q, dist)
+        U = get_neighbor(u, distmatrix, n)
         for v in U:
             newd = dist[u] + distmatrix[u][v]
-            if newd < dist[v]:                             #*@\label{dijk:update}
+            if newd < dist[v]:
                 dist[v] = newd
                 prev[v] = u
     return dist, prev
