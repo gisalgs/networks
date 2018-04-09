@@ -75,5 +75,5 @@ if __name__ == "__main__":
     from network2listmatrix import *
     fname = '../data/network-links'
     a = network2distancematrix(fname, True)
-    print shortest_path(1, 6, a)
-    print shortest_path(0, 7, a)
+    print(shortest_path(1, 6, a))
+    print(shortest_path(0, 7, a))
