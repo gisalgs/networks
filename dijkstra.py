@@ -9,6 +9,8 @@ Columbus, OH
 
 __author__ = "Ningchuan Xiao <ncxiao@gmail.com>"
 
+INF = float('inf')
+
 # from network2listmatrix import *
 
 def dijkstra(source, distmatrix):
