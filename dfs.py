@@ -14,7 +14,6 @@ def dfs(network, v):
     labelled = [ False for i in range(n)]
     labelled[v] = True
     while len(S) > 0:
-        print(S)
         t = S.pop()
         V.append(t)
         for u in network[t]:
