@@ -1,11 +1,13 @@
 def dfs(network, v):
     """
     Depth-first search
+
     Input
-      network: a network represented using a list of lists
-      v: initial node to start search
+      network     A network represented using a list of lists
+                    The i-th list contains the adjacent nodes for node i
+      v           Initial node to start search
     Output
-      V: a list of nodes visited
+      V           A list of nodes visited
     """
     n = len(network)
     S = [] # empty stack
